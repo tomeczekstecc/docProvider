@@ -4,7 +4,7 @@ const path = require("path");
 const connectDB = require("./config/db");
 const dotenv = require("dotenv");
 const serverless = require("serverless-http");
-const router = express.Router()
+
 
 dotenv.config({ path: "./config/config.env" });
 connectDB();
