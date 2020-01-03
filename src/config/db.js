@@ -1,10 +1,11 @@
 const mongoose = require('mongoose')
 
 
+
 const connectDB = async () => {
 
   try {
-    const conn = await mongoose.connect(process.env.MONGO_URI, {
+    const conn = await mongoose.connect('mongodb+srv://umwsl:BtYjskvaZpJrADU2@docprovider-dvnx1.mongodb.net/docProvider?retryWrites=true&w=majority', {
       useNewUrlParser: true,
       useFindAndModify: true,
       useCreateIndex: true,
